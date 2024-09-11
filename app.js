@@ -9,7 +9,7 @@
       }
     },
     mounted() {
-      axios.get('http://localhost/php-dischi-json/script.php')
+      axios.get('http://localhost:5678/php-dischi-json/script.php')
         .then(response => {
           console.log(response);
           this.disks = response.data
